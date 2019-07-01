@@ -75,12 +75,15 @@ Here's some pointers according to their platforms that you need to think about w
  There are two type of authentication that You might need.
  * You want to make sure that No, Non-user can access your platform.
     * 📖 [Here's how you can choose good authentication ](https://www.freecodecamp.org/news/evaluating-authentication-as-a-service-providers-6903895a8450/)
-  *  When your users device requesting private information you must ensure that your user is requesting the information instead of malicious user with device access.
+  * When your users device requesting private information you must ensure that your user is requesting the information instead of malicious user with device access.
   You can do this using FaceID and TouchID they are becoming more and more common with new smartphones.
+
     * 📖 [biometric authentication on Android App](https://proandroiddev.com/5-steps-to-implement-biometric-authentication-in-android-dbeb825aeee8)
 
     * 📖 [biometric authentication on iOS App](https://medium.com/we-talk-it/face-id-and-touch-id-biometric-authentication-ca1678fc338)
+
     * 📖 [biometric authentication on Cross Platform App](https://medium.com/react-native-training/integrate-touch-id-and-face-id-to-your-react-native-app-707e7db17edc)
+
   * Developing in-house authentication Management system can be vulnerable at times considering you haven't got it pentested yet.So if possible for your organization you can go for a AaaS Provider.
     * 📖 [Auth as a service providers](https://www.freecodecamp.org/news/evaluating-authentication-as-a-service-providers-6903895a8450/)  
 * [ ] **Hard-coding:**![High][high_img] Make sure you are not storing your secrets on your code.
