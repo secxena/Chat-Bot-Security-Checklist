@@ -14,10 +14,10 @@
     <img src="https://img.shields.io/badge/PRs-welcome-brightgreen.svg?style=flat-square" alt="PRs Welcome">
   </a>
     <a href="https://github.com">
-    <img src="https://img.shields.io/github/contributors/apoorvrajsaxena/Chat-Bot-Security-Checklist.png?style=flat-square" alt="Contributors">
+    <img src="https://img.shields.io/github/contributors/apoorvrajsaxena/Chat-Bot-Security-Checklist.svg" alt="Contributors">
   </a>
       <a href="https://github.com/">
-    <img src="https://img.shields.io/badge/Chat-Bot-Security_Checklist-followed-brightgreen.svg?style=flat-square" alt="Chat‑bot_Checklist followed">
+    <img src="https://img.shields.io/badge/Chat_Bot_Security_Checklist-followed-brightgreen.svg?style=flat-square" alt="Chat‑bot_Checklist followed">
 </a>
     <a href="https://creativecommons.org/publicdomain/zero/1.0/">
     <img src="https://img.shields.io/badge/license-CC0-green.svg?style=flat-square" alt="CC0">
@@ -48,7 +48,7 @@ It is based on Chat-bot developers' years of experience, with the additions comi
 
 ## How to use?
 
-All items in the **Chat-bot Checklist** are must for majority of the projects.exception can only be made for regulatory reason. you can use this checklist to implement three layered defense your Chatbot product. I devided this security impact of each class in three Low, Medium, and High.
+All items in the **Chat-bot Security Checklist** are must for majority of the projects.exception can only be made for regulatory reason. you can use this checklist to implement three layered defense your Chatbot product. I devided this security impact of each class in three Low, Medium, and High.
 
 * ![Low][low_img] means that the item is **recommended** but can be omitted in some particular situations.
 * ![Medium][medium_img] means that the item is **highly recommended** and can eventually be omitted in some really particular cases. Some elements, if omitted, can have bad repercussions.
@@ -114,14 +114,14 @@ When you are running your code in a machine you have no control, you need to tak
 
 ---
 
-## Chat-bot Checklist Badge
+## Chat-bot Security Checklist Badge
 
 If you want to show you are following the rules of the Chat-Bot Checklist, put this badge on your README file!
 
-➔ [![Chat‑bot_Checklist followed](https://img.shields.io/badge/Chat‑Bot_Checklist-followed-brightgreen.svg)](https://github.com/apoorvrajsaxena/Chat-Bot-Checklist)
+➔ [![Chat_Bot_Security_Checklist followed](https://img.shields.io/badge/Chat_Bot_Security_Checklist-followed-brightgreen.svg)](https://github.com/apoorvrajsaxena/Chat-Bot-Security-Checklist)
 
 ```md
-[![Chat‑Bot_Checklist followed](https://img.shields.io/badge/Chat‑Bot_Checklist-followed-brightgreen.svg)](https://github.com/apoorvrajsaxena/Chat-Bot-Checklist)
+[![Chat‑Bot_Checklist followed](https://img.shields.io/badge/Chat_Bot_Security_Checklist-followed-brightgreen.svg)](https://github.com/apoorvrajsaxena/Chat-Bot-Security-Checklist)
 ```
 
 **[⬆ back to top](#table-of-contents)**
@@ -134,7 +134,7 @@ If you want to show you are following the rules of the Chat-Bot Checklist, put t
 
 ### Guide
 
-The **Chat-Bot Checklist** repository consists of two branches:
+The **Chat-Bot Security Checklist** repository consists of two branches:
 
 #### 1. `master`
 
@@ -157,17 +157,17 @@ If you have any question or suggestion, don't hesitate to use Twitter:
 ## Contributors
 
 This project exists thanks to all the people who contribute. [[Contribute]](.github/CONTRIBUTING.md).
-<a href="https://github.com/apoorvrajsaxena/Chat-Bot-Checklist/graphs/contributors"><img src="https://opencollective.com/chat-bot-checklist/contributors.svg?width=890" /></a>
+<a href="https://github.com/apoorvrajsaxena/Chat-Bot-Security-Checklist/graphs/contributors"><img src="https://opencollective.com/Chat-Bot-Security-Checklist/contributors.svg?width=890" /></a>
 
 
 ## Backers
 
-🙏 [[Become a backer](https://opencollective.com/chat-bot-checklist#backer)]
+🙏 [[Become a backer](https://opencollective.com/Chat-Bot-Security-Checklist#backer)]
 
 
 ## Sponsors
 
-Support this project by becoming a sponsor. Your logo will show up here with a link to your website. [[Become a sponsor](https://opencollective.com/chat-bot-checklist#sponsor)]
+Support this project by becoming a sponsor. Your logo will show up here with a link to your website. [[Become a sponsor](https://opencollective.com/Chat-Bot-Security-Checklist#sponsor)]
 
 ## License
 
