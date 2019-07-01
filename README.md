@@ -48,7 +48,7 @@ It is based on Chat-bot developers' years of experience, with the additions comi
 
 ## How to use?
 
-All items in the **Chat-bot Security Checklist** are must for majority of the projects.exception can only be made for regulatory reason. you can use this checklist to implement three layered defense your Chatbot product. I devided this security impact of each class in three Low, Medium, and High.
+All items in the **Chat-bot Security Checklist** are must for majority of the projects.exception can only be made for regulatory reason. you can use this checklist to implement three layered defense to your Chat-bot product. Each point in the list is marked as low medium and high.
 
 * ![Low][low_img] means that the item is **recommended** but can be omitted in some particular situations.
 * ![Medium][medium_img] means that the item is **highly recommended** and can eventually be omitted in some really particular cases. Some elements, if omitted, can have bad repercussions.
@@ -57,20 +57,50 @@ All items in the **Chat-bot Security Checklist** are must for majority of the pr
 
 ---
 
+Before diving right into the checklist, let's ask a question why Chat-bot needs security
+and what's different with them? And the answer is, most of the components are same like your Infrastructure, Back-end, your middleware and dev-ops practices all are same, only thing that differs is Language and conversational components of the chat-bot which isn't common in mainstream applications that where the focus of this checklist.
+
 # Client-Security
-When you are running your code in a machine you have no control, you need to take some measures to insure quite a few things
+
+You might need to deploy your chat-bot to a social platform or you might need a dedicated mobile app or a web SDK that can be used to use your chat-bot in other businesses. In any case, When you are running your code in a machine you have no control, you need to take some measures to insure few things.
+Here's some pointers according to their platforms that you need to think about when deploying your Chat-bot -
 
 ## OS-Platforms
-* [ ] **Data:** ![High][high_img]Data is not accessible to other apps.
-* [ ] **Authentication:**![High][high_img] You must you if your customer is using your platform.
-* [ ] **Hardcoding:**![High][high_img] You are not storing your secrets on users device.
+* [ ] **Data:** ![Medium][medium_img] You need to make sure that your customers Data is not available to other apps. and you should also encrypt the data so that it can't be stolen even under physical access.
+  * [Securing Data on Android](https://www.futurelearn.com/courses/secure-android-app-development/0/steps/21592)
+  * [Securing Data on iOS](https://medium.com/ios-os-x-development/securing-user-data-with-keychain-for-ios-e720e0f9a8e2)
+
+
+* [ ] **Authentication:**![High][high_img]
+ There are two type of authentication that You might need.
+  *  You want to make sure that No, Non-user can access your platform.
+    * [Here's how you can choose good authentication ](https://www.freecodecamp.org/news/evaluating-authentication-as-a-service-providers-6903895a8450/)
+  *  When your users device requesting private information you must ensure that your user is requesting the information instead of malicious user with device access.
+  You can do this using FaceID and TouchID they are becoming more and more common with new smartphones.
+    * [biometric authentication on Android App](https://proandroiddev.com/5-steps-to-implement-biometric-authentication-in-android-dbeb825aeee8)
+
+    * [biometric authentication on iOS App](https://medium.com/we-talk-it/face-id-and-touch-id-biometric-authentication-ca1678fc338)
+    * [biometric authentication on Cross Platform App](https://medium.com/react-native-training/integrate-touch-id-and-face-id-to-your-react-native-app-707e7db17edc)
+  * Developing in-house authentication Management system can be vulnerable at times considering you haven't got it pentested yet.So if possible for your organization you can go for a AaaS Provider.
+    * [Auth as a service providers](https://www.freecodecamp.org/news/evaluating-authentication-as-a-service-providers-6903895a8450/)  
+* [ ] **Hard-coding:**![High][high_img] Make sure you are not storing your secrets on your code.
+Any API access token with admin privilege should not be hard-coded in your App.
+  * [Hard-coded credentials case study](https://www.zdnet.com/article/tens-of-thousands-of-cars-left-exposed-to-thieves-due-to-a-hardcoded-password/)
+
 
 ## Messaging-platforms
-* [ ] **Authentication:**![High][high_img] You must you if your customer is using your platform.
-* [ ] **regulatory Data Protection:**![High][high_img] You are not storing your secrets on users device.
+
+* [ ] **Channel Authorization:**  ![Medium][medium_img] Chat-bots have this unqiue feature of being available to everyone by deploying the bot on multiple channel like Skype for Business, Microsoft Teams, Facebook, Slack etc. So If you are planning to deploy your chat-bot in any of the platform your organization must make sure to restrict features which shouldn't be available to all.
+
+* [ ] **Channel Authentication:** ![Low][low_img] You should check if your customer is using your platform instead of someone else from his/her account.you can do this using 2-Factor Authentication like OTP SMS or Email,Google Authenticator.
+
+* [ ] **regulatory Data Protection:**![High][high_img] Every regulation restrict customer data ownership to yourself so if you are asking PII(Personally identifiable information) or ePHI(Electronic protected health information) from your customer you must restrict that particular intent to your native channel only.
+Because you don't have custom SLAs to any of these channel provider, you can't solely own the private data it'll be shared with them.
 
 ## Custom-Web-Platform
 * [ ] **Front-end Security**![High][high_img]
+If you are providing a chat-bot as a service company than you must think of secure deploybility for that reason you might sdk for platform like web,android,iOS etc.  than you need your Client side security + All the things that needed to secure you sdk.
+
 * [ ] **Authentication:**![High][high_img] You must you if your customer is using your platform.
 
 
@@ -84,7 +114,17 @@ When you are running your code in a machine you have no control, you need to tak
 
 
 ## Dialog-Management-System
-* [ ] **Authorization:**![High][high_img] You must you if your customer is using your platform.
+* [ ] **Authorization:**![High][high_img] You must check who is the user if your customer is using your platform.
+Role Management
+
+* Customer
+  * Unauthenticated customer
+  * Authenticated Non-Premium customer
+  * Premium customer
+If your chat-bot also have functionality for Internal users then also you need these roles. 
+* Internal
+  * Developer/tester
+  * Admin
 
 * [ ] **Language generation Constraint:**![High][high_img] You must you if your customer is using your platform.
 
