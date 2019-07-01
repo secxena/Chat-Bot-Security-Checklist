@@ -1,23 +1,23 @@
 <h1 align="center">
 <br>
-  <img src="data/cc.png" alt="Chat-Bot-Checklist" width="270">
+  <img src="data/cc.png" alt="Chat-Bot-Security-Checklist" width="270">
   <br>
     <br>
-  Chatbot Checklist
+  Chat-bot Security Checklist
   <br>
 </h1>
 
-<h4 align="center">The Chatbot Checklist is an exhaustive list of all elements you need to have before launching your chatbot  to production.</h4>
+<h4 align="center">The Chat-Bot Security Checklist is an exhaustive list of all elements you need to have before launching your chat-bot  to production.</h4>
 
 <p align="center">
   <a href="http://makeapullrequest.com">
     <img src="https://img.shields.io/badge/PRs-welcome-brightgreen.svg?style=flat-square" alt="PRs Welcome">
   </a>
     <a href="https://github.com">
-    <img src="https://img.shields.io/github/contributors/?style=flat-square" alt="Contributors">
+    <img src="https://img.shields.io/github/contributors/apoorvrajsaxena/Chat-Bot-Security-Checklist.png?style=flat-square" alt="Contributors">
   </a>
       <a href="https://github.com/">
-    <img src="https://img.shields.io/badge/Chatbot_Checklist-followed-brightgreen.svg?style=flat-square" alt="Chat‑bot_Checklist followed">
+    <img src="https://img.shields.io/badge/Chat-Bot-Security_Checklist-followed-brightgreen.svg?style=flat-square" alt="Chat‑bot_Checklist followed">
 </a>
     <a href="https://creativecommons.org/publicdomain/zero/1.0/">
     <img src="https://img.shields.io/badge/license-CC0-green.svg?style=flat-square" alt="CC0">
@@ -28,22 +28,21 @@
   <a href="#how-to-use">How To Use</a> • <a href="#contributing">Contributing</a> • <a href="">Website</a> • <a href="https://www.producthunt.com/">Product Hunt</a>
 </p>
 
-It is based on Chatbot developers' years of experience, with the additions coming from some other open-source checklists.
+It is based on Chat-bot developers' years of experience, with the additions coming from some other open-source checklists.
 
 ## Table of Contents
 
-1. **[CLient Side Security](#Client-security)**
-    1. [OS Platform](#OS Platforms)
-    2. [Messaging Platforms](#messaging-platforms)
-    3. [Custom-Website Platform](#Custom-Platform)
-2. **[NLP Technology Secuirty](#nlp-tech)**
-    1. [Intent Classifiers](#intent-Classifiers)
-    2. [Dialog Mangement System](#DMS)
-    3. [Conversation Records](#Dialog-history)
-3. **[Backend + Infrastructure](#backend-infrastructure)**
+1. **[CLient Side Security](#Client-Security)**
+    1. [OS Platform](#OS-Platforms)
+    2. [Messaging Platforms](#Messaging-platforms)
+    3. [Custom-Website Platform](#Custom-Web-Platform)
+2. **[NLP Technology Secuirty](#NLP-security)**
+    1. [Intent Classifiers](#Intent-Classifiers)
+    2. [Dialog Mangement System](#Dialog-Management-System)
+    3. [Conversation Records](#Conversation-Records)
+3. **[Backend + Infrastructure](#Back-end-Infrastructure)**
     1. [OWASP Top 10](#OWASP-Top-10)
     2. [Licensing](#Licesnsing)
-    3. [Another thing](#Another-thing)
 
 ---
 
@@ -58,46 +57,46 @@ All items in the **Chat-bot Checklist** are must for majority of the projects.ex
 
 ---
 
-# Client Side Security
+# Client-Security
 When you are running your code in a machine you have no control, you need to take some measures to insure quite a few things
 
-## Native OS Platforms
+## OS-Platforms
 * [ ] **Data:** ![High][high_img]Data is not accessible to other apps.
 * [ ] **Authentication:**![High][high_img] You must you if your customer is using your platform.
 * [ ] **Hardcoding:**![High][high_img] You are not storing your secrets on users device.
 
-## Messaging platforms
+## Messaging-platforms
 * [ ] **Authentication:**![High][high_img] You must you if your customer is using your platform.
 * [ ] **regulatory Data Protection:**![High][high_img] You are not storing your secrets on users device.
 
-## Custom Web Platform
+## Custom-Web-Platform
 * [ ] **Front-end Security**![High][high_img]
 * [ ] **Authentication:**![High][high_img] You must you if your customer is using your platform.
 
 
-# NLP Technology Security
+# NLP-Security
 
-## Intent Classifiers
+## Intent-Classifiers
 * [ ] **Intent Segregation:**![High][high_img] You must you if your customer is using your platform.
 
 * [ ] **Permissioned Intent:**![High][high_img] You must you if your customer is using your platform.
 
 
 
-## Dialog Management System
+## Dialog-Management-System
 * [ ] **Authorization:**![High][high_img] You must you if your customer is using your platform.
 
 * [ ] **Language generation Constraint:**![High][high_img] You must you if your customer is using your platform.
 
-## Conversation Records
+## Conversation-Records
 * [ ] **Life Cycle Management:**![High][high_img] You must you if your customer is using your platform.
 * [ ] **PII and PHI Redaction:**![High][high_img] You must you if your customer is using your platform.
 * [ ] **Administration:** [High][high_img] You must you if your customer is using your platform.
 
 
-# Back-end Infrastructure
+# Back-end-Infrastructure
 
-## OWASP TOP 10
+## OWASP-TOP-10
 * [ ] **Injection:**
 * [ ] **Broken Authentication:**
 * [ ] **Sensitive data exposure:**
