@@ -145,8 +145,10 @@ if one user takes 5 seconds to read the text and 10 seconds with other UIs then 
 ## Conversation-Records
 * [ ] **Life Cycle Management:**![High][high_img] You should create a system where you mark Conversation as stale and send them to archive. and also if you need to delete them or not.
 backup should be in place for all the chats.
+
 * [ ] **PII and PHI Redaction:**![High][high_img] You should implement a solution to redact or encrypt the Personally identifiable data. you can do this by storing a key on the user's device. so the user can decrypt and read their Conversation and no one else will be able to read it. but you will be needing these logs for audit purposes.
-* [ ] **Administration:** [High][high_img] Create a system where there should be clear access on who can access the conversational data. and also log the data accessing activity to another server where you have the access.
+
+* [ ] **Administration:** ![High][high_img] Create a system where there should be clear access on who can access the conversational data. and also log the data accessing activity to another server where you have the access.
 
 
 # Back-end-Infrastructure
@@ -166,7 +168,7 @@ backup should be in place for all the chats.
 ## Licensing
 * [ ] **SLAs:** Check service level agreement for bot usage. There would be problems if a vendor doesn't support bot accessing their service. It will be no use for you to buy some software which doesn't allow bot access to their service.
 
-##regulation
+## Regulation
 * [ ] [GDPR](https://blog.rasa.com/how-gdpr-affects-your-chatbot-and-voice-assistant/)
 * [ ] [PCI-DSS](https://usa.visa.com/dam/VCOM/global/support-legal/documents/visa-security-alert-july-2018.pdf)
 
