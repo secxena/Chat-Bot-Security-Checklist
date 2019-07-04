@@ -25,7 +25,7 @@
 </p>
 
 <p align="center">
-  <a href="#how-to-use">How To Use</a> • <a href="#contributing">Contributing</a> • <a href="">Website</a> • <a href="https://www.producthunt.com/">Product Hunt</a>
+  <a href="#how-to-use">How To Use</a> • <a href="#contributing">Contributing</a>
 </p>
 
 It is based on Chat-bot developers' years of experience, with the additions coming from some other open-source checklists.
@@ -215,20 +215,6 @@ If you have any question or suggestion, don't hesitate to use Twitter:
 
 **[Apoorv Raj Saxena](https://github.com/apoorvrajsaxena)**
 
-## Contributors
-
-This project exists thanks to all the people who contribute. [[Contribute]](.github/CONTRIBUTING.md).
-<a href="https://github.com/apoorvrajsaxena/Chat-Bot-Security-Checklist/graphs/contributors"><img src="https://opencollective.com/Chat-Bot-Security-Checklist/contributors.svg?width=890" /></a>
-
-
-## Backers
-
-🙏 [[Become a backer](https://opencollective.com/Chat-Bot-Security-Checklist#backer)]
-
-
-## Sponsors
-
-Support this project by becoming a sponsor. Your logo will show up here with a link to your website. [[Become a sponsor](https://opencollective.com/Chat-Bot-Security-Checklist#sponsor)]
 
 ## License
 
